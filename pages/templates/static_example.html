@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+<!-- extends는 항상 최상단 -->
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
+{% endblock %}
+
+{% block content %}
+ <h1>static 파일 실습</h1>
+ <img src="{% static 'images/271037-disney-the-lion-king-wallpaper-3.jpg' %}" alt="img">
+{% endblock %}
