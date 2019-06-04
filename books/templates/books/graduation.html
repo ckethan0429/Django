@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ end | date}} 까지 {{ end | timeuntil:now}}</h1>
+<h1> 수료까지 남은 시간은 {{ gap }} 입니다. </h1>
+{% endblock %}

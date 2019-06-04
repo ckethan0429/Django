@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('books/', include('books.urls')),
     path('pages/', include('pages.urls')), #pages의 urls 파일봄
     path('admin/', admin.site.urls),
 ]

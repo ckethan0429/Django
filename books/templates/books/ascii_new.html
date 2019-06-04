@@ -1,0 +1,16 @@
+
+<h1>글씨 폰트 선택</h1>
+<form action="/books/ascii_make/">
+    <input type="text" name="text">
+    <select name="font">
+        {% for font in fonts %}
+        <option value="{{ font }}"> {{ font }} </option>
+        {% endfor %}
+
+    </select>
+
+    <input type="submit" value="만들기">
+    </form>
+    <a href="/books/"> back</a>
+
+

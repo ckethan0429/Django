@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #local apps
+    'books.apps.BooksConfig',
     'pages.apps.PagesConfig',
     #thrid party apps
     
@@ -60,8 +61,8 @@ ROOT_URLCONF = 'intro.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        'DIRS': [os.path.join(BASE_DIR, 'intro', 'templates')],
+        'APP_DIRS': True, # app_name/templates 인식한다는 것
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
